@@ -1,0 +1,5 @@
+.text-input-form {
+    max-width: 400px;
+    padding: var(--dimension-s);
+    margin: 0 auto;
+}

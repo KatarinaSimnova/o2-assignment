@@ -1,0 +1,60 @@
+:root {
+  --o2-blue-500: #0050FF;
+
+  --core-gray-00: #FFFFFF;
+  --core-gray-300: #C9C9CE;
+  --core-gray-500: #8C8C9A;
+  --core-grey-950: #2C2C31;
+
+  --core-red-100: #FFDCDC;
+  --core-red-600: #DC2828;
+
+  --core-yellow-100: #FAF186;
+  --core-yellow-700: #A56315;
+
+  --core-alpha-dim-50: #1A1A1A0F;
+  --core-alpha-dim-800: #1A1A1ACC;
+
+  --color-surface-x-high: var(--core-gray-500);
+  --color-surface-x-low: var(--core-gray-00);
+  --color-surface-brand: var(--o2-blue-500);
+  --color-surface-danger: var(--core-red-600);
+  --color-surface-danger-variant: var(--core-red-100);
+  --color-surface-warning: var(--core-yellow-700);
+  --color-surface-warning-variant: var(--core-yellow-100);
+
+  --color-content-on-neutral-xx-high: var(--core-grey-950);
+  --color-content-on-neutral-medium: var(--core-gray-500);
+  --color-content-on-neutral-low: var(--core-gray-300);
+  --color-content-on-neutral-danger: var(--core-red-600);
+  --color-content-on-neutral-warning: var(--core-yellow-700);
+
+  --color-state-default-hover: var(--core-alpha-dim-50);
+  --color-state-default-focus: var(--core-alpha-dim-800);
+
+  --dimension-radius-input: 12px;
+  --dimension-xs: 8px;
+  --dimension-s: 12px;
+  --dimension-m: 16px;
+  --dimension-l: 20px;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: On Air Var;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/OnAirVar.woff2) format("woff2"),url(./fonts/OnAirVar.woff) format("woff")
+}
+
+body {
+  font-family: On Air Var, sans-serif;
+  margin: 0px;
+  min-width: 375px;
+  background-color: var(--color-surface-x-low)
+}
+
+h1, h2, h3, p, ul, ol, li, a, button, input, textarea, select {
+  font-family: On Air Var, sans-serif;
+}
+
