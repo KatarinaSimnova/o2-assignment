@@ -47,7 +47,7 @@
   }
 
 .form-item-input:focus {
-    border: 2px solid var(--color-content-on-neutral-xx-high)
+    outline: 2px solid var(--color-content-on-neutral-xx-high)
 }
 
 .form-item-error-message {
@@ -61,11 +61,11 @@
 }
 
 .form-item-input-error {
-    border: 2px solid var(--color-content-on-neutral-danger);
+    outline: 2px solid var(--color-content-on-neutral-danger);
     background-color: var(--color-surface-danger-variant);
 }
 
 .form-item-input-warning {
-    border: 2px solid var(--color-content-on-neutral-warning);
+    outline: 2px solid var(--color-content-on-neutral-warning);
     background-color: var(--color-surface-warning-variant);
 }

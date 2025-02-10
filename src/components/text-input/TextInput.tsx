@@ -34,7 +34,6 @@ export const TextInput = ({
   maxlength,
   pattern,
   autoFocus,
-  ...rest
 }: IProps) => {
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -42,9 +41,9 @@ export const TextInput = ({
     event.preventDefault();
 
     if (event.target.value === "") {
-      onChange(event.target.name, null);
+      onChange(name, null);
     } else {
-      onChange(event.target.name, event.target.value);
+      onChange(name, event.target.value);
     }
   };
 
@@ -84,7 +83,6 @@ export const TextInput = ({
           autoFocus={autoFocus}
           aria-invalid={!!error || !!warning}
           aria-describedby={inputIssueParagraphId}
-          {...rest}
         />
       ) : (
         <input
@@ -104,7 +102,6 @@ export const TextInput = ({
           autoFocus={autoFocus}
           aria-invalid={!!error || !!warning}
           aria-describedby={inputIssueParagraphId}
-          {...rest}
         />
       )}
       {error && (
