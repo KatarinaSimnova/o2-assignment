@@ -16,6 +16,8 @@ interface IProps {
   maxlength?: number;
   pattern?: string;
   autoFocus?: boolean;
+  onFocus?: () => void;
+  onBlur?: () => void;
 }
 
 export const TextInput = ({
@@ -34,6 +36,8 @@ export const TextInput = ({
   maxlength,
   pattern,
   autoFocus,
+  onFocus,
+  onBlur,
 }: IProps) => {
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -83,6 +87,8 @@ export const TextInput = ({
           autoFocus={autoFocus}
           aria-invalid={!!error || !!warning}
           aria-describedby={inputIssueParagraphId}
+          onFocus={onFocus}
+          onBlur={onBlur}
         />
       ) : (
         <input
@@ -102,6 +108,8 @@ export const TextInput = ({
           autoFocus={autoFocus}
           aria-invalid={!!error || !!warning}
           aria-describedby={inputIssueParagraphId}
+          onFocus={onFocus}
+          onBlur={onBlur}
         />
       )}
       {error && (
